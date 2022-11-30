@@ -1581,6 +1581,32 @@ input, select, textarea {
 				width: auto;
 			}
 
+	.col-4.col-6-medium.col-12-small {
+		position: relative;
+		width: 50%;
+		max-width: 250px;
+	}
+	/* The overlay effect - lays on top of the container and over the image */
+	.title {
+		position: absolute;
+		bottom: 0;
+		background: rgb(0, 0, 0);
+		background: rgba(0, 0, 0, 0.5); /* Black see-through */
+		color: #f1f1f1;
+		width: 90.75%;
+		transition: .5s ease;
+		opacity:0;
+		color: white;
+		font-size: 20px;
+		padding: 20px;
+		text-align: center;
+	}
+	
+	/* When you mouse over the container, fade in the overlay title */
+	.col-4.col-6-medium.col-12-small:hover .title {
+		opacity: 1;
+	}
+
 /* Button */
 
 	input[type="button"],
