@@ -2205,7 +2205,7 @@ input, select, textarea {
 						object-position: center;
 					}
 
-					#main > .panel.intro .pic .arrow {
+					/* #main > .panel.intro .pic .arrow {
 						display: block;
 						position: absolute;
 						right: 0;
@@ -2240,7 +2240,7 @@ input, select, textarea {
 					#main > .panel.intro .pic:hover .arrow {
 						width: 3em;
 						padding-right: 0.25em;
-					}
+					} */
 
 				#main > .panel.intro header {
 					-moz-flex-grow: 1;
