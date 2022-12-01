@@ -12,10 +12,12 @@ $subject = "Inquiry from portfolio site";
 // The following text will be sent
 // Name = user entered name
 // Email = user entered email
+// Subject = user entered subject
 // Message = user entered message
-$txt ="Name = ". $name . "\r\n  Email = "
-    . $email . "\r\n Subject = " $subject 
-    . "\r\n Message = " . $message;
+$txt = "Name = ". $name 
+. "\r\n  Email = ". $email 
+. "\r\n  Subject = ". $subject 
+. "\r\n Message = " . $message;
  
 $headers = "From: noreply@kathyadamsswe.com";
 
