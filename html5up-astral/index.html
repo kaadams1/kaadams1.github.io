@@ -91,7 +91,10 @@
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form method="post" action="contact-form.php">
+								<!-- <form method="POST" action="contact-form.php"> -->
+								<form name="contact" method="POST" data-netlify="true">
+									<input type="hidden" name="email-subject" 
+  										value="Inquiry from kathyadamsswe.netlify.app" />
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium" id="name-field">
