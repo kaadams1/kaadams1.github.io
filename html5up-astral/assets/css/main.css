@@ -1517,6 +1517,27 @@ input, select, textarea {
 		color: #999;
 	}
 
+	#name-field {
+		padding-left: 0px;
+		padding-right: 10px;
+	}
+
+	#email-field {
+		padding-left: 10px;
+	}
+
+	#subject-field {
+		padding-left: 0px;
+	}
+
+	#message-field {
+		padding-left: 0px;
+	}
+
+	#submit-button {
+		padding-left: 0px;
+	}
+
 /* Section/Article */
 
 	section, article {
@@ -1533,7 +1554,7 @@ input, select, textarea {
 
 		header > p {
 			margin: 0.5em 0 0 0;
-			color: #aaa;
+			color: #363636;
 		}
 
 		@media screen and (max-width: 736px) {
@@ -1758,7 +1779,8 @@ input, select, textarea {
 	{
 		position: relative;
 		display: block;
-		overflow: hidden;
+		justify-content: center;
+		/* overflow: hidden; */
 		margin: 0;
 		padding: 0;
 	}
