@@ -1623,6 +1623,7 @@ input, select, textarea {
 			font-size: 20px;
 			padding: 20px;
 			text-align: center;
+			pointer-events: none;
 		}
 		
 		/* When you mouse over the container, fade in the overlay title */
@@ -2203,6 +2204,7 @@ input, select, textarea {
 						-webkit-object-position: center;
 						-ms-object-position: center;
 						object-position: center;
+						/* image-resolution: from-image 300dpi; */
 					}
 
 					/* #main > .panel.intro .pic .arrow {
