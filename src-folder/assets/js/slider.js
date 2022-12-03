@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.tech-logos').slick({
-        slidesToShow: 7,
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500,
