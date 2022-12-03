@@ -78,7 +78,7 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		justify-content: space-evenly;
+		align-items: stretch;
 	}
 
 		.row > * {
@@ -270,7 +270,8 @@ input, select, textarea {
 		}
 
 			.row > * {
-				padding: 1.25em 0 0 1.25em;
+				/* padding: 1.25em 0 0 1.25em; */
+				/* margin: 1.25em 0 0 1.25em; */
 			}
 
 			.row.gtr-uniform {
@@ -755,6 +756,7 @@ input, select, textarea {
 				.row {
 					margin-top: -1.25em;
 					margin-left: -1.25em;
+					gap: 20px;
 				}
 
 					.row > * {
@@ -1308,7 +1310,7 @@ input, select, textarea {
 	body {
 		background-image: url("images/overlay.png"), url("images/alyani-yang-WajET_vzPmI-unsplash.jpg");
 		background-repeat: repeat, no-repeat;
-		background-size: auto, 100% 100%;
+		background-size: cover;
 		background-attachment: fixed;
 		overflow-y: scroll;
 	}
@@ -1517,27 +1519,6 @@ input, select, textarea {
 		color: #999;
 	}
 
-	#name-field {
-		padding-left: 0px;
-		padding-right: 10px;
-	}
-
-	#email-field {
-		padding-left: 10px;
-	}
-
-	#subject-field {
-		padding-left: 0px;
-	}
-
-	#message-field {
-		padding-left: 0px;
-	}
-
-	#submit-button {
-		padding-left: 0px;
-	}
-
 /* Section/Article */
 
 	section, article {
@@ -1572,9 +1553,8 @@ input, select, textarea {
 	}
 
 		.image img {
-			margin: auto;
-			display: block;
-			width: 80%;
+			display: inline-block;
+			width: 100%;
 		}
 
 		.image.fit {
@@ -1603,33 +1583,37 @@ input, select, textarea {
 				width: auto;
 			}
 
-		.col-4.col-6-medium.col-12-small {
-			position: relative;
-			width: 30%;
-			padding-left: 0px;
-			/* max-width: 250px; */
-		}
-		/* The overlay effect - lays on top of the container and over the image */
-		.title {
-			position: absolute;
-			bottom: 0;
-			background: rgb(0, 0, 0);
-			background: rgba(0, 0, 0, 0.5); /* Black see-through */
-			color: #f1f1f1;
-			width: 100%;
-			transition: .5s ease;
-			opacity:0;
-			color: white;
-			font-size: 20px;
-			padding: 20px;
-			text-align: center;
-			pointer-events: none;
-		}
-		
-		/* When you mouse over the container, fade in the overlay title */
-		.col-4.col-6-medium.col-12-small:hover .title {
-			opacity: 1;
-		}
+	/* WORK ON THIS  - overlay extends beyond the image to the right */
+	/* .project-img {
+		position: relative;
+		padding-top: 0;
+		padding-left: 0;
+		width: 15px;
+	} */
+
+				/* The overlay effect - lays on top of the container and over the image */
+				/* .title {
+					position: absolute;
+					bottom: 0;
+					background: rgb(0, 0, 0);
+					background: rgba(0, 0, 0, 0.5); /* Black see-through */
+					/* color: #f1f1f1;
+					width: 100%; */
+					/* width: auto; */
+					/* width: fit-content; */
+					/* transition: .5s ease;
+					opacity:0;
+					color: white;
+					font-size: 20px;
+					padding: 20px;
+					text-align: center;
+					pointer-events: none;
+				}
+				 */
+				/* When you mouse over the container, fade in the overlay title */
+				/* .project-img:hover .title {
+					opacity: 1;
+				} */
 
 /* Button */
 
@@ -1750,19 +1734,21 @@ input, select, textarea {
 			padding-left: 0.25em;
 		}
 
-/* Slider */
+
+/* Slider - WORK ON THIS - any way to get it more centered? */ 
 
 	.slick-slide {
-		margin: 0px 20px;
+		margin: 0px 35px;
 	}
 
 	.slick-slide img {
-		width: 30%;
+		width: 50%;
 	}
 
 	.slick-slider
 	{
-		position: relative;
+		/* position: relative; */
+		position: center;
 		display: block;
 		box-sizing: border-box;
 		-webkit-user-select: none;
@@ -1781,7 +1767,7 @@ input, select, textarea {
 		position: relative;
 		display: block;
 		justify-content: center;
-		/* overflow: hidden; */
+		overflow: hidden;
 		margin: 0;
 		padding: 0;
 	}
@@ -1867,6 +1853,7 @@ input, select, textarea {
 	.slick-arrow.slick-hidden {
 		display: none;
 	}
+
 /* Actions */
 
 	ul.actions {
@@ -2113,7 +2100,7 @@ input, select, textarea {
 	#main {
 		position: relative;
 		overflow: hidden;
-		width: 130%;
+		width: 100%;
 		background: #ffffff;
 		box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
 		-moz-transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
@@ -2204,7 +2191,6 @@ input, select, textarea {
 						-webkit-object-position: center;
 						-ms-object-position: center;
 						object-position: center;
-						/* image-resolution: from-image 300dpi; */
 					}
 
 					/* #main > .panel.intro .pic .arrow {
